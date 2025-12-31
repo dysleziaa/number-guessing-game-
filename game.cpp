@@ -10,12 +10,12 @@ int main()
 
     do
     {
-        int secretNumber = 1 + (rand() % 50);
+        int secretNumber = 1 + (rand() % 100);
         int userGuess = 0;
         int attempts = 0;
-        const int MAX_ATTEMPTS = 10;
+        const int MAX_ATTEMPTS = 5;
 
-        cout << "\nI have picked a number between 1 to 50.\n";
+        cout << "\nI have picked a number between 1 to 100.\n";
         cout << "You have " << MAX_ATTEMPTS << " tries to guess it!\n\n";
 
         while (userGuess != secretNumber)
